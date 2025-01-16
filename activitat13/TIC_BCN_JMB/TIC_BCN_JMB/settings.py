@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'TIC_BCN_JMB.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql',
-        'NAME':'db',
+        'NAME':'postgres',
         'USER':'user_postgres',
         'PASSWORD':'pass_postgres',
-        'HOST':'127.0.0.1',
+        'HOST':'localhost',
         'PORT':'5432',
     }
 }
