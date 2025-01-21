@@ -27,12 +27,12 @@ def insertStudent():
         rol="Estudiant",
     )
     student.save()
-    return HttpResponse("Insert Successfull")
+    return HttpResponse("Insert student Successfull")
 
-def getTeachers():
+def getTeachers(request):
     teachers = Teacher.objects.all()
-    return ""
+    return render(request, 'teachers.html', {'teachers': teachers})
 
-def getStudents():
+def getStudents(request):
     students = Student.objects.all()
-    return ""
+    return render(request, 'students.html', {'students': students})
