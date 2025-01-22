@@ -11,4 +11,5 @@
 <img src="teachers.png">
 
 <h2>Activitat 3</h2>
-<p>He creat un model de Teacher i students i fet la migracio de les taules a la base de dades postgres i a partir de aqui he creat els endpoints per a fer el insert a la base de dades</p>
+<p>He creat un model de Teacher i students i fet la migracio de les taules a la base de dades postgres i a partir de aqui he creat els endpoints per a fer el insert a la base de dades, captura de la migracio a postgres a continuacio</p>
+<img src="migration.png">
