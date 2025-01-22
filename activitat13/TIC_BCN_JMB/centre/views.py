@@ -30,9 +30,15 @@ def insertStudent():
     return HttpResponse("Insert student Successfull")
 
 def getTeachers(request):
-    teachers = Teacher.objects.all()
+    teachers = [
+        {"id_teacher":1,"nom":"Oriol","cognom":"Roca","edat":34,"rol":"profe","curs":"2n de daw"},
+        {"id_teacher": 2, "nom": "Roger", "cognom": "Sobrino", "edat": 34, "rol": "profe", "curs": "2n de daw"}
+    ]
     return render(request, 'teachers.html', {'teachers': teachers})
 
 def getStudents(request):
-    students = Student.objects.all()
+    students = [
+        {"id_student":1,"nom":"Joan","rol":"estudiant"},
+        {"id_student": 2, "nom": "Hugo", "rol": "estudiant"},
+    ]
     return render(request, 'students.html', {'students': students})
