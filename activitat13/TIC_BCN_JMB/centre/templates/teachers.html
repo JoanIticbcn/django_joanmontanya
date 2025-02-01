@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1>Dades dels professors</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Cognom</th>
+            <th>Edat</th>
+            <th>Rol</th>
+            <th>Curs</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for teacher in teachers %}
+        <tr>
+            <td>{{ teacher.id_teacher }}</td>
+            <td>{{ teacher.nom }}</td>
+            <td>{{ teacher.cognom }}</td>
+            <td>{{ teacher.edat }}</td>
+            <td>{{ teacher.rol }}</td>
+            <td>{{ teacher.curs }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
