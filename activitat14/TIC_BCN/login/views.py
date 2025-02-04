@@ -1,7 +1,7 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+
 def guardarsessio(request):
     request.session["user"] = "Joan"
     return render(request,"login.html")

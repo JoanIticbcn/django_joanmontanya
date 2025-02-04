@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pasApas.apps.PasapasConfig'
+    'pasApas.apps.PasapasConfig',
+    'login.apps.LoginConfig'
 ]
 
 MIDDLEWARE = [
