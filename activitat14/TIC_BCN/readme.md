@@ -1,1 +1,3 @@
 <h1>Documentacio de l'activitat 14</h1>
+
+<p>El sistema que he creat es un formulari on l'usuari fa login amb l'email i el password i quan li dona al boto de submit el redirigeix a un endpoint que fa la verificacio de l'usuari contra la BD i si es correcte s'inicia la sessio i després el redirigeix a la pagina d'inici on es torna a comprovar si l'usuari exiteix en la BD per si algú entra a l'inici sense estar a la base de dades</p>
