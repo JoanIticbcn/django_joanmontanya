@@ -6,4 +6,5 @@ urlpatterns = [
     path('ferLogin',views.ferlogin),
     path('inici',views.recuperarSessio),
     path('creaUsuari',views.guardarusuari),
+    path('logout',views.logout)
 ]

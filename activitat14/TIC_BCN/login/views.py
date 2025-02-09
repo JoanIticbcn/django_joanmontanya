@@ -32,6 +32,11 @@ def recuperarSessio(request):
 
     return HTTPResponse("No tens la sessio iniciada")
 
+def logout(request):
+    request.session["email"] = ""
+    request.session["password"]=""
+    return render(request, "loginform.html")
+
 def guardarusuari():
     usuari = Usuari(
         id_usuari = 1,
