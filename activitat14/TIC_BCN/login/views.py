@@ -7,8 +7,9 @@ from .forms import EmailAuthenticationForm
 # Create your views here.
 
 def formulari(request):
-    authentication_form = EmailAuthenticationForm
-    return render(request, "loginform.html")
+    authentication_form = EmailAuthenticationForm()
+    context = {'form':authentication_form}
+    return render(request, "loginform.html",context)
 
 def ferlogin(request):
     email = request.POST.get('email')
@@ -35,7 +36,9 @@ def recuperarSessio(request):
 def logout(request):
     request.session["email"] = ""
     request.session["password"]=""
-    return render(request, "loginform.html")
+    authentication_form = EmailAuthenticationForm()
+    context = {'form': authentication_form}
+    return render(request, "loginform.html",context)
 
 def guardarusuari():
     usuari = Usuari(
